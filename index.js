@@ -22,8 +22,6 @@ function cachedLookup(key, cb) {
   }
 }
 
-// Please excuse the pyramid of death >:D
-
 const start = Date.now()
 
 function log(value) {
