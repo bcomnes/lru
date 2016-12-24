@@ -4,11 +4,7 @@ function LRU (size, opts) {
   if (!opts) opts = {}
 
   this.size = size
-  // We use an associative array because javascript provides these by default,
-  // and they help us keep track of order.
   this._accessList = []
-  // We use an object as a hash table for our key/value pairs to provide even
-  // lookup time for all keys
   this._hashTable = {}
 }
 
